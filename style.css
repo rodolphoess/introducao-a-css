@@ -1,0 +1,95 @@
+/* Isso aqui é um comentário */
+
+/* TAGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+    text-align: justify;
+    text-shadow: 1px 1px 1px #111111;  /* Primeiro valor diz respeito ao sombreamento horizontal empurrando a sombra para a direita, 
+    o segundo valor diz respeito ao sombreamento vertical empurrando o sombreamento para baixo, o terceiro valor
+    diz respeito a dispersão da sombra, e o quarto valor é a cor da sombra. */
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #35b8b0;
+    height: 80px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #35b8b0;
+    height: 40px;
+    clear: both; /* Ao utilizar a propriedade float na div acima, a div de baixo fica atrás da div que 
+    utilizou o float. Para consertar isso utiliza-se essa propriedade clear: both, pois ela 'limpa' a 
+    propriedade float. */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff7f50;
+    text-shadow: 1px 1px 1px #111111; /* Primeiro valor diz respeito ao sombreamento horizontal empurrando a sombra para a direita, 
+    o segundo valor diz respeito ao sombreamento vertical empurrando o sombreamento para baixo, o terceiro valor
+    diz respeito a dispersão da sombra, e o quarto valor é a cor da sombra. */
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+/* IDS */
+
+#div-principal {
+    background-color: black;
+    min-height: 450px;  /* A div começa com 200px, mas a medida que for colocado mais conteúdo na div ela vai crescendo */
+    background-image: url('cidade.jpg');
+    background-size: 100%;
+    padding: 70px 0px 0px 0px;
+    clear: both; /* Ao utilizar a propriedade float na div acima, a div de baixo fica atrás da div que 
+    utilizou o float. Para consertar isso utiliza-se essa propriedade clear: both, pois ela 'limpa' a 
+    propriedade float. */
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    float: right;
+    margin-top: 30px;
+}
+
+#menu a { /* As tags a da div com id menu receberão as propriedades desse seletor. */
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px #111111;
+    padding: 15px;
+}
+
+#menu a:hover { /* As tags a da div com id menu receberão o efeito hover quando o cursor do mouse
+    passa pelo elemento contigo na tag a */
+    background-color: #111111;
+    color: #35b8b0;
+}
+
+/* CLASS */
+
+.container {
+    width: 1300px;
+    margin: auto;
+}
+
+.efeito {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px 0px 80px 0px;
+}
